@@ -13,6 +13,9 @@ var mySum = function (num1, num2) {
 };
 //console.log(mySum("9", "6"));
 function getName(firstName, lastName) {
+    if (lastName == undefined) {
+        return firstName;
+    }
     return firstName + ' ' + lastName;
 }
-console.log(getName("Anish", "joshi"));
+console.log(getName("Anish"));
